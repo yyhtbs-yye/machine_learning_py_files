@@ -1,4 +1,5 @@
 from matplotlib.colors import ListedColormap, hsv_to_rgb
+import numpy as np
 
 # Function to plot decision boundaries for multiple classes
 def knn_visualisation(X_train, y_train, X_test, y_test, knn_fcn, ax, k=3, reslx=20):
