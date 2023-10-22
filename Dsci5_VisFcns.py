@@ -3,7 +3,7 @@ from matplotlib.colors import ListedColormap, hsv_to_rgb
 import numpy as np
 
 # Function to plot decision boundaries for multiple classes
-def scatter(X, y):
+def scatter(X, y, xyeq=True):
 
     num_classes = len(np.unique(y))
 
@@ -20,5 +20,6 @@ def scatter(X, y):
     plt.legend()
     plt.xlabel("Feature 1")
     plt.ylabel("Feature 2")
+    if xyeq: plt.axis('scaled')
     plt.title("2D Data Visualisation")
     plt.show()
